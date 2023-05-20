@@ -15,8 +15,11 @@ x = linspace(0,xDist,100); % range of x values we are interested in
 
 Ti = 298; % K - initial wall temperature
 TinfGiven = 2667.2; % K - hot gas temperature
-TinfCEQ = 1816.675; % K - hot gas temperature 
+TinfCEQ = 2499.938; % K - hot gas temperature 
                     % found from CEQUEL and converting to throat temp
+
+% Tr is an equation for the local / atmospheric temperature
+% Tr = (1 + ((gamma-1)/2)*Pr^(1/3)*M^2)*Tinf;
 
 % Equation
 % iterate over x, plug in t values that we want for plot purposes
